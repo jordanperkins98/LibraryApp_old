@@ -1,0 +1,178 @@
+body{
+    background-color: #ffffff;
+}
+
+#books{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 1%;
+}
+
+#new-book{
+    position: absolute;
+    bottom: 10px;
+    left: 1;
+    height: 1.5em;
+    width: 1.5em;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(4, 143, 4);
+    font-size: 35px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+#new-book::-moz-focus-inner{
+    border: 0;
+}
+
+#square{
+    display: block;
+    position: fixed;
+    background-color: white;
+    width: 15%;
+    height: 458px;
+    top: 25%;
+    left: 42.5%;
+    border-radius: 10px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],input[type="number"], select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer; /* Make cursor change to pointer */
+    resize: vertical;
+}
+
+
+form{
+    margin-top: 17px;
+    height: fit-content;
+}
+
+#title-label{
+    padding-left: 25px;
+}
+
+@media only screen and (max-width:768px){
+    #square{
+        width: 100%;
+        left: 0;
+        top: 20%; 
+    }
+    form{
+        margin-top: 16px;
+        height: fit-content;
+    }
+    
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(56, 56, 56, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  }
+
+input:required{
+    box-shadow: none;
+}
+
+#title{
+    margin-top: 7px;
+}
+
+
+
+#add{
+    position: relative;
+    bottom: 1.2px;
+    left: 1.4px;
+    height: 28px;
+    width: 99%;
+    background-color: rgb(4, 143, 4);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: whitesmoke;
+}
+#add::-moz-focus-inner{
+    border: 0;
+}
+.form-group{
+    font-weight: 500;
+    font-size: 17px;
+    margin: 8px 0 15px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+    
+}
+
+.form-group::-moz-focus-inner{
+    border: 0;
+}
+
+#card{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0.5px 3px 8px;
+    height: 250px;
+    width: 160px;
+    border-radius: 10px; 
+    margin-left: 2%;
+}
+
+.title{
+    font-size: 17px;
+    text-align: center;
+}
+
+.info{
+    font-size: 14px;
+    text-align: center;
+}
+
+.close-icon{
+    background: url(close.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 24px;
+    width: 24px;
+    float: right;
+    margin: 5px 5px 0 0;
+    opacity: 45%;
+    cursor: pointer;
+}
+
+#remove-book{
+    position: relative;
+    bottom: 163px;
+    left: 13px;
+    height: 24px;
+    width: 24px;
+    scale: 70%;
+    background-color: rgb(253, 8, 8);
+    border-radius: 10px;
+    opacity: 80%;
+}
+

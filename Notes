@@ -1,0 +1,9 @@
+
+
+Render function:
+
+
+needs to take the library array and loop through it
+and add a "card" for each book to the div.
+
+For each item in the library array, we want to display all properties within the "card".

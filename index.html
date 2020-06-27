@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay">
+        <div id="square">
+            <span class="close-icon"></span>
+            <form id="form">
+                <div class="form-group">
+                    <label id="title-label" for="title">Title</label><br>
+                    <input type="text" placeholder="Enter Title Of Book" name="title" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label id="author-label" for="author">Author</label><br>
+                    <input type="text" placeholder="Enter Author Of Book" name="author" class="form-control" id="author" required>
+                </div>
+                <div class="form-group">
+                    <label id="pages-label" for="pages-label">Pages</label><br>
+                    <input type="number" placeholder="Enter The Number of Pages" name="pages" class="form-control" id="pages" required>
+                </div>
+                <div class="form-group">
+                    <label id="read-label" for="read">Have you read?</label><br>
+                    <select id="read" name="read">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" id="add">Add Book</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <div id="books"></div>
+    <button id="new-book">+</button>
+    
+</body>
+<script src="script.js"></script>
+</html>
