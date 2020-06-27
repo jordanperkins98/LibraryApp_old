@@ -176,3 +176,26 @@ input:required{
     opacity: 80%;
 }
 
+#change-read{
+    display: block;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(4, 143, 4);
+    color: rgb(243, 243, 243);
+
+    outline: none;
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    position: relative;
+    top: 20%;
+    cursor: pointer;
+}
+
+#change-read::-moz-focus-inner{
+    border: 0;
+}
+

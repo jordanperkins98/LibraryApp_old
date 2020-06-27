@@ -80,7 +80,7 @@ function CreateCard() {
     card.appendChild(pages);
 
     const read = document.createElement("p");
-    read.textContent = `read: ${myLibrary[myLibrary.length-1].read}`;
+    read.textContent = `Read: ${myLibrary[myLibrary.length-1].read}`;
     read.setAttribute("class", "info");
     card.appendChild(read);
 
@@ -92,6 +92,20 @@ function CreateCard() {
         e.srcElement.parentElement.remove();
     });
     card.appendChild(deleteCard);
+
+    const changeRead = document.createElement("button");
+    changeRead.setAttribute("id","change-read");
+    changeRead.addEventListener("click", ()=>{
+        if(myLibrary[myLibrary.length-1].read === "Yes"){
+            myLibrary[myLibrary.length-1].read = "No";
+            changeRead.parentElement.children[3].textContent = "Read: No"
+        } else{
+            myLibrary[myLibrary.length-1].read = "Yes";
+            changeRead.parentElement.children[3].textContent = "Read: Yes"
+        }
+    });
+    changeRead.textContent = "Change read status";
+    card.appendChild(changeRead);
 
     //Adding full card to the div within the HTML
     div.appendChild(card);
