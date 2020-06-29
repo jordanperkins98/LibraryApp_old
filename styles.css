@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffff;
+    background-color: rgb(238, 238, 238);
 }
 
 #books{
@@ -95,7 +95,7 @@ input:required{
     box-shadow: none;
 }
 
-#title{
+#title-form{
     margin-top: 7px;
 }
 
@@ -134,21 +134,24 @@ input:required{
 }
 
 #card{
-    background-color: rgb(196, 196, 196);
+    font-family: 'Averia Serif Libre', cursive;
+    background-color: #A2C8E0;
     box-shadow: 0.5px 3px 8px;
     height: 250px;
     width: 160px;
     border-radius: 10px; 
     margin-left: 2%;
+    font-size: 30px;
 }
 
 .title{
-    font-size: 17px;
+    font-size: 20px;
     text-align: center;
 }
 
+
 .info{
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -166,7 +169,7 @@ input:required{
 
 #remove-book{
     position: relative;
-    bottom: 163px;
+    bottom: 184px;
     left: 13px;
     height: 24px;
     width: 24px;
@@ -182,6 +185,7 @@ input:required{
     width: 100%;
     background-color: rgb(4, 143, 4);
     color: rgb(243, 243, 243);
+    font-family: 'Averia Serif Libre', cursive;
 
     outline: none;
     border: solid;
@@ -191,7 +195,7 @@ input:required{
     border-bottom-right-radius: 10px;
     
     position: relative;
-    top: 20%;
+    bottom: 7%;
     cursor: pointer;
 }
 
@@ -199,3 +203,19 @@ input:required{
     border: 0;
 }
 
+#title{
+    font-family: 'Averia Serif Libre', cursive;
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+    position: relative;
+    top: 6px;
+}
+
+#header{
+    background-color: #75B7E0;
+    position: relative;
+    bottom: 8px;
+    margin: 0 -9px;
+    padding-bottom: 20px; 
+}

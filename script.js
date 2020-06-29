@@ -149,7 +149,12 @@ function getArray(){
         myLibrary = JSON.parse(localStorage.getItem("library"));
         render();
     }
-    else{ return; }
+    else{
+        if(myLibrary.length > 0){
+            render();
+        }
+        
+    }
 }
 
 function render(){
@@ -163,4 +168,5 @@ function render(){
         CreateCard();
     }
 }
+
 
