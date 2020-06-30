@@ -84,8 +84,7 @@ function CreateCard(index=myLibrary.length - 1) {
     card.appendChild(read);
 
     const deleteCard = document.createElement("span");
-    deleteCard.setAttribute("class","close-icon");
-    deleteCard.setAttribute("class", "remove-book")
+    deleteCard.setAttribute("class","close-icon remove-book");
     deleteCard.addEventListener("click", (e)=>{
         myLibrary.splice(removeBook.parentElement.getAttribute("data"),1);
         e.srcElement.parentElement.remove();
