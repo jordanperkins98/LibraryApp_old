@@ -8,6 +8,8 @@ body{
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 1%;
+
+    
 }
 
 #new-book{
@@ -65,10 +67,10 @@ form{
     padding-left: 25px;
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:800px){
     #square{
-        width: 100%;
-        left: 0;
+        width: 60%;
+        left: 20%;
         top: 20%; 
     }
     form{
@@ -136,6 +138,7 @@ input:required{
 }
 
 .card{
+    margin-top: 12px;
     font-family: 'Averia Serif Libre', cursive;
     background-color: #A2C8E0;
     box-shadow: 0.5px 3px 8px;
