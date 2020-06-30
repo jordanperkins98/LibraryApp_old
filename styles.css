@@ -133,7 +133,7 @@ input:required{
     border: 0;
 }
 
-#card{
+.card{
     font-family: 'Averia Serif Libre', cursive;
     background-color: #A2C8E0;
     box-shadow: 0.5px 3px 8px;
@@ -142,6 +142,7 @@ input:required{
     border-radius: 10px; 
     margin-left: 2%;
     font-size: 30px;
+    position: relative;
 }
 
 .title{
@@ -167,7 +168,7 @@ input:required{
     cursor: pointer;
 }
 
-#remove-book{
+.remove-book{
     position: relative;
     bottom: 184px;
     left: 13px;
@@ -179,7 +180,7 @@ input:required{
     opacity: 80%;
 }
 
-#change-read{
+.change-read{
     display: block;
     height: 10%;
     width: 100%;
@@ -194,12 +195,12 @@ input:required{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
-    position: relative;
-    bottom: 7%;
+    position: absolute;
+    bottom: 0;
     cursor: pointer;
 }
 
-#change-read::-moz-focus-inner{
+.change-read::-moz-focus-inner{
     border: 0;
 }
 

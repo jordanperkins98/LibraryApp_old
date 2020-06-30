@@ -59,7 +59,7 @@ function CreateCard(index=myLibrary.length - 1) {
     
     //Creating the card 
     const card = document.createElement("div");
-    card.setAttribute("id", "card");
+    card.setAttribute("class", "card");
     card.setAttribute("data",index);
     //Creating the heading (title of book)
     const heading = document.createElement("h3");
@@ -85,7 +85,7 @@ function CreateCard(index=myLibrary.length - 1) {
 
     const deleteCard = document.createElement("span");
     deleteCard.setAttribute("class","close-icon");
-    deleteCard.setAttribute("id", "remove-book")
+    deleteCard.setAttribute("class", "remove-book")
     deleteCard.addEventListener("click", (e)=>{
         myLibrary.splice(removeBook.parentElement.getAttribute("data"),1);
         e.srcElement.parentElement.remove();
@@ -93,7 +93,7 @@ function CreateCard(index=myLibrary.length - 1) {
     card.appendChild(deleteCard);
 
     const changeRead = document.createElement("button");
-    changeRead.setAttribute("id","change-read");
+    changeRead.setAttribute("class","change-read");
     changeRead.addEventListener("click", ()=>{
         if(myLibrary[index].read === "Yes"){
             myLibrary[index].read = "No";
