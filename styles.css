@@ -35,10 +35,10 @@ body{
     display: block;
     position: fixed;
     background-color: white;
-    width: 15%;
+    width: 25vw;
     height: 458px;
     top: 25%;
-    left: 42.5%;
+    left: 37.5%;
     border-radius: 10px;
 }
 
